@@ -1,21 +1,21 @@
 const checkboxBrands = [
     {
-      id: 'cb1',
+      id: 'B1',
       label: 'AVEED®'
     },
   
     {
-      id: 'cb2',
+      id: 'B2',
       label: 'SUPPRELIN® LA'
     },
   
     {
-      id: 'cb3',
+      id: 'B3',
       label: 'XIAFLEX® DC'
     },
   
     {
-      id: 'cb4',
+      id: 'B4',
       label: 'XIAFLEX® PD'
     }
   ]

@@ -5,6 +5,7 @@ import Search from "../components/searchbar"
 import Checkbox from "../components/checkbox"
 import checkboxBrands from "../data/checkboxBrands"
 import checkboxCategories from "../data/checkboxCategories"
+import Card from "../components/card"
 
 const IndexPage = () => {
   return (
@@ -16,16 +17,23 @@ const IndexPage = () => {
           <p>Welcome to the Patient Access Resource Center.</p>
         </div>
         <div className="site-wrapper">
-          <div className="search">
-            <Search />
+          <div className="col-1">
+            <div className="search">
+              <Search />
+            </div>
+            <div className="checkbox-brands">
+              <p>Brands:</p>
+              {checkboxBrands.map((item) => <Checkbox id={item.id} label={item.label} />)}
+            </div>
+            <div className="checkbox-categories">
+              <p>Categories:</p>
+              {checkboxCategories.map((item) => <Checkbox id={item.id} label={item.label} />)}
+            </div>
           </div>
-          <div className="checkbox-brands">
-            <p>Brands:</p>
-            {checkboxBrands.map((item) => <Checkbox id={item.id} label={item.label} />)}
-          </div>
-          <div className="checkbox-categories">
-            <p>Categories:</p>
-            {checkboxCategories.map((item) => <Checkbox id={item.id} label={item.label} />)}
+          <div className="col-2">
+            <Card/>
+            <Card/>
+            <Card/>
           </div>
         </div>
       </div>
