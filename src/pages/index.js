@@ -6,6 +6,7 @@ import Checkbox from "../components/checkbox"
 import checkboxBrands from "../data/checkboxBrands"
 import checkboxCategories from "../data/checkboxCategories"
 import Card from "../components/card"
+import cardData from "../data/cardData"
 
 const IndexPage = () => {
   return (
@@ -31,9 +32,7 @@ const IndexPage = () => {
             </div>
           </div>
           <div className="col-2">
-            <Card/>
-            <Card/>
-            <Card/>
+            {cardData.map((item) => <Card cardTitle={item.cardTitle} assetType={item.assetType} brand={item.brand} customer={item.customer} marcCode={item.delivery} delivery={item.marcCode} imgSrc={item.imgSrc}/>)}
           </div>
         </div>
       </div>

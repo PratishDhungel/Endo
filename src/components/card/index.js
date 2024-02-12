@@ -4,11 +4,11 @@ import Button from '../buttons'
 
 
 
-function Card({imgSrc,assetType,brand,customer,marcCode,delivery}) {
+function Card({cardTitle,imgSrc,assetType,brand,customer,marcCode,delivery}) {
     return (
         <div className='card-container'>
             <img src={imgSrc} width='180px' height='232.94px'/>
-            <h2>Endo Advantage XPD Prescription and Benefits Investigation Form</h2>
+            <h2>{cardTitle}</h2>
             <div className="details">
                 <div className="details-titles-container">
                     <div className='details-title'>Asset Type</div>
