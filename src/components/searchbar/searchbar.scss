@@ -1,0 +1,30 @@
+@import '../../sass/variables';
+@import '../../sass/breakpoints';
+
+.search-container{
+display: flex;
+flex-direction: column;
+
+    label{
+        font-weight: $font-bold;
+        color: $tertiary;
+        margin-bottom: 15px;
+    }
+
+    input[type="search"]{
+        width: 342px;
+        height: 48px;
+        border: 2px solid #E4E5E5;
+        border-radius: 4px;
+        background-image: url('../../images/searchbar/Vector.png');
+        background-repeat: no-repeat;
+        background-position: 302px 14px;
+        padding: 19px 20px;
+        outline: none;
+
+        @include sm {
+            width: 399px;
+            background-position: 359px 14px;
+        }
+    }
+}

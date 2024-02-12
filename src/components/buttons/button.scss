@@ -1,0 +1,29 @@
+@import '../../sass/variables';
+@import '../../sass/breakpoints';
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    &-primary {
+        font-weight: $font-bold;
+        background-color: $primary;
+        padding: 17.5px 91.5px;
+        border-radius: 4px;
+        color: #FFFFFF;
+        border: 2px solid transparent;
+        transition: all 0.5s;
+
+        &:hover {
+            border: 2px solid $primary;
+            background-color: #FFFFFF;
+            color: $primary;
+        }
+
+        @include sm {
+            padding: 17.5px 32px;
+        }
+    }
+
+}

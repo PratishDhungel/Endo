@@ -1,0 +1,39 @@
+@import"../sass/breakpoints";
+@import"../sass/variables";
+@import '../sass/base';
+@import '../sass/layout';
+
+
+.site-header {
+    .logo {
+        margin-top: 20px;
+        margin-bottom: 22px;
+    }
+
+    p {
+        color: $tertiary;
+    }
+}
+
+
+.site-wrapper {
+    margin-top: 42px;
+    background-color: #FAFAFA;
+    padding: 40px;
+
+    .checkbox-brands {
+        p {
+            margin-top: 0px;
+            color: $tertiary;
+            font-weight: $font-bold;
+        }
+    }
+
+    .checkbox-categories {
+        p {
+            margin-top: 0px;
+            color: $tertiary;
+            font-weight: $font-bold;
+        }
+    }
+}

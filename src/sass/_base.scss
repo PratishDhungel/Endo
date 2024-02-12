@@ -1,0 +1,106 @@
+body {
+  font-family: $font-family-base;
+  font-weight: $font-normal;
+  color: $body-color;
+  font-size: 18px;
+  line-height: 140%;
+
+  @include sm {
+    font-size: $font-base-size;
+    line-height: $font-base-line-height;
+  }
+
+  &.no-scroll {
+    overflow-y: hidden;
+  }
+}
+
+.pro-regular {
+  font-weight: $font-regular;
+}
+
+strong,
+.strong,
+.bold {
+  font-weight: $font-bold;
+}
+
+.italics,
+.italic {
+  font-style: italic;
+}
+
+.upper,
+.uppercase {
+  text-transform: uppercase;
+}
+
+sup {
+  vertical-align: super;
+  font-size: 0.65em;
+  line-height: 0;
+  color: inherit;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: 0.65em;
+  line-height: 0;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+h1,
+.h1 {
+  font-weight: $font-bold;
+  font-size: 58px;
+  line-height: 30px;
+  color: $tertiary;
+  font-family: $font-arial;
+
+  @include xsDown {
+    font-size: 38px;
+    line-height: 30px;
+  }
+
+}
+
+h2,
+.h2 {
+  font-family: $font-arial;
+  font-weight: $font-bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: $tertiary;
+
+}
+
+h3,
+.h3 {
+  font-family: $font-arial;
+  font-weight: $font-bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: $tertiary;
+}
+
+
+.font-regular {
+  font-weight: $font-regular;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-white {
+  color: $white;
+}
+
+.bold {
+  font-weight: $font-bold;
+}

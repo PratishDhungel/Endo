@@ -1,0 +1,56 @@
+@import '../../sass/variables';
+
+
+
+.checkbox-wrapper{
+    p{
+        font-weight: $font-bold;
+        color: $tertiary;
+    }
+}
+
+
+.checkbox-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    label{
+        cursor: pointer;
+        color: $tertiary;
+        display: flex;
+        margin-bottom: 10px;
+
+        &:hover::before{
+            background-color: rgb(193, 193, 193);
+        }
+
+        &::before{
+            content: '';
+            width: 24px;
+            height: 24px;
+            border: 2px solid #E4E5E5;
+            background-color: #fefefe;
+            margin-right: 8px;
+        }
+    }
+
+    input[type='checkbox']{
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+
+        &:hover + label::before {
+            background-color: rgb(193, 193, 193);
+        }
+
+        &:checked + label::before{
+            content: url('../../images/checkbox/Vector.png');
+            background-color: $primary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fefefe;
+        }
+    }
+}

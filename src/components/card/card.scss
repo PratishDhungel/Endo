@@ -1,0 +1,86 @@
+@import '../../sass/variables';
+@import '../../sass/breakpoints';
+@import '../../sass/layout';
+
+.card-container {
+    width: 342px;
+    padding: 32px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    text-align: left;
+    box-shadow: 1px 1px 15px 2px rgba($color: #000000, $alpha: 0.1);
+
+    @include smDown{
+        transform: scale(0.5);
+    }
+
+    @include sm {
+        transform: scale(0.7);
+    }
+
+
+    @include lg {
+        width: 787px;
+        position: relative;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+img{
+    @include lg {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translate(-110px,-50%);
+    }
+
+}
+
+
+    h2{
+        font-weight: $font-bold;
+        width: 278px;
+        min-height: 60px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-top: 0px;
+
+        @include lg {
+            width: 399px;
+        }
+    
+
+    }
+
+    .details{
+        font-family: $font-inter;
+        font-size: 14px;
+
+        &-titles-container{
+            display: flex;
+            gap: 25px;
+        }
+
+        &-title{
+            width: 110px;
+            font-weight: $font-bold;
+            color: $tertiary;
+        }
+
+        &-info{
+            width: 205px;
+            color: $tertiary;
+
+            @include lg{
+                width: 320px;
+            }
+        }
+    }
+
+    .btn-primary {
+        display: block;
+    }
+}
